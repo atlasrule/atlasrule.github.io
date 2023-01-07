@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
+<div id="stats"></div>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="goo">
+      <fegaussianBlur in="SourceGraphic" stddeviation="10" result="blur" />
+      <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"/>
+    </filter>
+  </defs>
+</svg>
   <head>
-    <title>Berkay Yılmaz</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://cdn.rawgit.com/shiffman/The-Nature-of-Code-Examples-p5.js/4b64aba1/chp05_libraries/toxiclibs/NOC_5_10_SimpleSpring/libraries/toxiclibs.js"></script>
+    <script src="https://cdn.rawgit.com/shiffman/The-Nature-of-Code-Examples-p5.js/4b64aba1/chp05_libraries/toxiclibs/NOC_5_10_SimpleSpring/libraries/toxichelper.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
   </head>
   <body>
-    <h1Berkay Yılmaz</h1>
-    <p>Here is my <a href="files/berkayyilmaz_resume.pdf">CV</a>.</p>
+    <canvas id="canvas"></canvas>
+    <script src="sketch.js"></script>
   </body>
 </html>

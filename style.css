@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #1c0542;
+
+}
+
+canvas {
+  position : absolute;
+  top : 0px;
+  left : 0px;
+  display: block;
+  -webkit-filter: url("#goo");
+  filter: url("#goo");
+
+}
+
+a {
+  color: hotpink;
+  font-size: 4.9vw;
+  font-family: Courier, monospace;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255,185,219);
+  text-decoration: underline;
+}
